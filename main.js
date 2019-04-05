@@ -1,7 +1,10 @@
-const one = document.querySelector(".one");
-const small = document.querySelector(".small");
-one.innerText = small.offsetTop;
+var small = document.getElementById("small");
+var sticky = small.offsetTop;
 
-document.onscroll = function() {
-  
+window.onscroll = function stickit() {
+  if (window.scrollY >= sticky) {
+    small.classList.add("sticky");
+  } else {
+    small.classList.remove("sticky");
+  }
 }

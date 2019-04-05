@@ -1,27 +1,21 @@
-* {
+body {
   margin: 0;
-  padding: 0;
+  height: 2000px;
 }
 
-.small {
-  width: 300px;
+.block {
   height: 200px;
-  float: left;
-  margin: 400px 0 0 40%;
-  background: rgba(0, 0, 0, .1);
+  width: 100%;
+  background: cyan;
 }
 
-.big {
-  width: 500px;
-  height: 3000px;
-  background: rgba(0, 0, 0, .9);
-  float: right;
-  margin: 20px 10px;
+#small {
+  height: 200px;
+  background: wheat;
 }
 
-.data {
+.sticky {
   position: fixed;
-  left: 20px;
-  top: 20px;
-  font-size: 1.5em;
+  top: 0;
+  width: 100%;
 }
